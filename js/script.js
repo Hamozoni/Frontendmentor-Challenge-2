@@ -90,6 +90,7 @@ function backWard(arrey, el) {
 };
 
 function searhCountry(value) {
+    filterRegion.value = "";
   searchB = [];
   for (let i = 0; i < myRspond.length; i++) {
     if (myRspond[i].name.toLowerCase().includes(value.toLowerCase())) {
@@ -117,7 +118,6 @@ function moreDetail(i) {
   } else {
     search = searchB;
   };
-  filterRegion.value = "";
   myContent = `
     <div class="coutry-detail">
     <button onclick="backWard (search,myContent) " id="back-btn"><img src="icons/left-arrow.png" alt="back"> back</button>
