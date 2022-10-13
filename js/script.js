@@ -117,6 +117,7 @@ function moreDetail(i) {
   } else {
     search = searchB;
   };
+  filterRegion.value = "";
   myContent = `
     <div class="coutry-detail">
     <button onclick="backWard (search,myContent) " id="back-btn"><img src="icons/left-arrow.png" alt="back"> back</button>
