@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css">
+    <link href="https://fontawesome.com/icons">
+
 </head>
 <body>
     <div id="app">
@@ -19,41 +21,37 @@
             <section class="container">
                 <h1 class="where-in-world">Where in the world?</h1>
                 <div class="them-mode">
-                    <i class="fa-solid fa-moon"></i>
-                    <span class="dark-light">Dark mode</span>
+                    <img class="m-icon" src="icons/nightlight_round.svg" alt="mode icon">
+                    <span class="dark-light">dark mode</span>
                 </div>
             </section>
         </header>
         <nav>
-            <section class="container">
+            <div class="container">
                 <div class="input-search-icon box-r-sh">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input id="search" type="text" placeholder="Search for a country..."> 
+                    <img class="s-icon" src="icons/search_FILL0_wght400_GRAD0_opsz48.svg" alt="search icon">
+                    <input onkeyup="searhCountry(this.value)" id="search" type="text" placeholder="Search for a country..."> 
                 </div>
                 <div class="filter-select">
-                    <select class="box-r-sh" id="region" >
+                    <select class="box-r-sh" name="" id="region" >
                         <option  value hidden disabled selected>Felter by region</option>
                         <option value="africa">Africa</option>
                         <option value="america">America</option>
                         <option value="asia">Asia</option>
                         <option value="europe">Europe</option>
-                        <option value="europe">Oceania</option>
+                        <option value="oceania">Oceania</option>
+                        <option value="">All Country</option>
                     </select>
                 </div>     
-            </section>
+            </div>
         </nav>
         <main role="contentinfo" class="main-content">
-            <section class="container">
-                <!-- <div class="country-rapper">
-                    <img class="flag" src="images/sudan.jpg" alt="Sudan">
-                    <div class="country-info">
-                        <h2 class="cn-name">Sudan</h2>
-                        <h3 class="cn-population"> Population: <span> 45,787,987</span></h3>
-                        <h3 class="cn-region"> Region: <span> Africa</span></h3>
-                        <h3 class="cn-capital"> Capital: <span> Khartoum</span></h3>
-                    </div>
-                </div> -->
-            </section>
+            <div class="container">
+                <div class="loading">
+                    <img src="icons/6356659.png" alt="">
+                    <h3>Loading...</h3>
+                </div>
+            </div>
         </main>
     </div>
     <script src="js/script.js"></script>
